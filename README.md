@@ -5,11 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+public/userflow.png to see the diagram
+#
+yarn dev to see the new UI of the Vehicle data
+# 
+yarn test to see the simple unit test
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
