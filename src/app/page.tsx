@@ -2,11 +2,11 @@
 import { useState, useEffect } from "react";
 import ListItem from "./ListItem";
 import fetchVehicle from "./fetchVehicle";
-import { VehicleType } from "./types"
+import { NullableVehicle } from "./types"
 
 
 export default function Home() {
-  const [ vehicle, setVehicle ] = useState<null | VehicleType>(null);
+  const [ vehicle, setVehicle ] = useState<NullableVehicle>(null);
 
   const fetchData = async () => {
     try {

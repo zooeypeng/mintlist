@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import { VehicleType } from "./types";
+import { NullableVehicle } from "./types";
 
 interface VehicleProps {
-  data: VehicleType | null;
+  data: NullableVehicle;
   handleUpdate: Function;
   handleCancel: Function;
 }
 
 const EditPanel: React.FC<VehicleProps> = ({ data, handleUpdate, handleCancel }) => {
-  const [ vehicleData, setVehicleData ] = useState<VehicleType>(data)
+  const [ vehicleData, setVehicleData ] = useState<NullableVehicle>(data)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;

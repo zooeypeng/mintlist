@@ -1,5 +1,5 @@
-import { Vehicle } from './interfaces'
+import { UpdateVehicle as Vehicle } from './interfaces'
 
-export type VehicleType = Vehicle & {
+export type NullableVehicle = Vehicle & {
   vin: string; // Vehicle ID
 } | null;

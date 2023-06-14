@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { VehicleType } from "./types";
+import { NullableVehicle } from "./types";
 import { UpdateVehicle } from "./interfaces";
 import EditPanel from "./EditPanel";
 
 interface ListItemProps {
-  data: VehicleType | null;
+  data: NullableVehicle;
 }
 
 const ListItem: React.FC<ListItemProps> = ({ data }) => {
